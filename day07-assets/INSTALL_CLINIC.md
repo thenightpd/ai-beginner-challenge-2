@@ -1,72 +1,80 @@
-# Day 7 사전 설치 클리닉
+# 7장 혼자 설치하기 — Mac / Windows
 
-이 문서는 **수강생 혼자 하는 숙제**가 아닙니다. 운영자가 화면을 함께 보면서 Day 7 전날까지 끝냅니다. 목표는 설치 방법을 외우는 것이 아니라 아래 네 줄을 확인하는 것입니다.
+운영자 동행 없이 아래 순서대로 진행합니다. 이미 설치된 항목은 건너뛰세요. 설치 내용이 낯설면 AI에게 설명을 부탁하고, 문제가 반복되면 구매자 단톡방에서 함께 해결합니다.
 
-```text
-Python 준비 완료
-FFmpeg 준비 완료
-FFprobe 준비 완료
-Skill 설치 완료
-```
+## 1. 먼저 상태 확인
 
-## 1. 먼저 읽기 전용으로 확인
-
-Claude Desktop에서 `day07-start` 폴더를 **Code → 로컬 → 폴더 선택…**으로 열고 다음 문장을 보냅니다.
+Claude Desktop의 Code에서 압축을 푼 `day07-start` 폴더만 열고 보내세요.
 
 ```text
-파일을 바꾸거나 설치하지 말고 PRECHECK_MAC.md 또는 PRECHECK_WINDOWS.md를 읽어 주세요.
-내 운영체제에서 Python, FFmpeg, FFprobe가 준비됐는지만 확인하고
-'준비됨' 또는 '없음'으로 표를 보여 주세요.
+내 운영체제용 PRECHECK 문서를 읽고 Python, ffmpeg, ffprobe를 읽기 전용으로 확인해 주세요.
+준비됨/없음 표를 보여 주세요. 없는 것만 INSTALL_CLINIC.md 순서로 한 단계씩 안내하고, 설치 전 내 확인을 기다리세요.
+비밀번호와 API 키는 읽거나 출력하지 마세요.
 ```
 
-세 항목이 모두 준비됐으면 4번으로 갑니다. 하나라도 없으면 운영자와 아래 OS별 경로를 진행합니다.
+세 도구가 모두 준비되면 4번으로 이동합니다.
 
-## 2. Mac — 운영자와 함께
+## 2. Mac
 
-1. Safari/Chrome에서 [Homebrew 공식 홈페이지](https://brew.sh/)를 엽니다.
-2. 홈페이지의 **Install Homebrew** 명령을 복사합니다. 다른 블로그의 명령은 쓰지 않습니다.
-3. Mac의 **Terminal**을 열고 붙여넣은 뒤 Return을 누릅니다.
-4. Mac 로그인 암호를 묻는다면 수강생이 직접 입력합니다. 입력 중 글자가 안 보여도 정상이며, 암호를 운영자에게 보내지 않습니다.
-5. 설치 마지막에 `Next steps`가 나오면 화면의 PATH 명령을 그대로 실행합니다.
-6. Terminal을 닫았다가 다시 열고 `brew --version`을 실행합니다.
-7. 버전 번호가 보이면 `brew install python ffmpeg`를 실행합니다.
-8. 설치 뒤 Terminal을 닫았다가 다시 열고 `python3 --version`, `ffmpeg -version`, `ffprobe -version`을 차례로 확인합니다.
+1. Spotlight(Cmd + Space)에서 ‘터미널’을 찾아 엽니다.
+2. `brew --version`을 입력합니다. 버전이 나오면 5번으로 갑니다.
+3. 없다면 [Homebrew 공식 설치 안내](https://brew.sh/)에서 설치 명령을 복사해 터미널에 붙여넣습니다. 설치 내용을 읽고 진행하며 Mac 로그인 암호는 본인이 직접 입력합니다. 암호가 화면에 표시되지 않는 것은 정상입니다.
+4. 설치 마지막의 ‘Next steps’ 명령을 실행한 뒤 터미널을 완전히 닫았다가 다시 엽니다. `brew --version`이 되는지 확인합니다.
+5. 아래 명령으로 영상 제작 도구를 설치합니다.
 
-오류가 나면 같은 설치를 반복하지 말고 화면 전체를 운영자에게 보여 줍니다.
+```bash
+brew install python ffmpeg
+```
 
-## 3. Windows — 운영자와 함께
+6. 터미널과 Claude 앱을 다시 열고 `python3 --version`, `ffmpeg -version`, `ffprobe -version`을 확인합니다.
 
-Windows 설치 경로는 운영자가 **실제 Windows 교육용 컴퓨터에서 먼저 리허설한 뒤** 사용합니다.
+설치 오류가 나면 오류 문구를 보존하세요. 반복 설치보다 [오류표](recovery/ERROR_TO_ACTION.md)를 먼저 확인합니다.
 
-1. 시작 메뉴에서 **PowerShell**을 엽니다.
-2. `winget --version`을 실행해 Windows 패키지 관리자가 있는지 확인합니다.
-3. 준비돼 있다면 운영자가 아래 두 패키지 이름과 게시자를 화면에서 다시 확인한 뒤 한 줄씩 실행합니다.
+## 3. Windows
+
+1. 시작 메뉴에서 ‘PowerShell’을 엽니다.
+2. `winget --version`을 입력합니다. 없다면 Microsoft Store의 **앱 설치 관리자(App Installer)**를 설치/업데이트한 뒤 PowerShell을 다시 엽니다. 조직에서 설치를 막으면 관리자에게 문의하거나 구매자 단톡방에 상황을 알려주세요.
+3. 아래 명령을 한 줄씩 실행합니다. 설치 안내에서 패키지 이름과 게시자를 확인하고 동의 여부를 직접 결정합니다.
 
 ```powershell
 winget install --exact --id Python.Python.3.12
 winget install --exact --id Gyan.FFmpeg
 ```
 
-4. PowerShell을 완전히 닫았다가 다시 엽니다.
-5. `py --version`, `ffmpeg -version`, `ffprobe -version`을 차례로 확인합니다.
+4. PowerShell과 Claude 앱을 완전히 닫았다가 다시 엽니다.
+5. `py -3 --version`, `ffmpeg -version`, `ffprobe -version`을 확인합니다. 세 명령 모두 버전이 나와야 합니다.
 
-`winget`이 없거나 설치 뒤 명령을 찾지 못하면 임의 사이트에서 ZIP을 받거나 PATH를 추측해 고치지 않습니다. 운영자가 [Python 공식 Windows 다운로드](https://www.python.org/downloads/windows/)와 [FFmpeg 공식 다운로드 안내](https://ffmpeg.org/download.html)에서 현재 권장 경로를 다시 확인합니다.
+`winget`이 계속 없으면 [Microsoft 공식 안내](https://learn.microsoft.com/en-us/windows/package-manager/winget/)를 확인하세요. 설치 후 명령을 찾지 못하면 PC를 한 번 재시작하고 재확인합니다. 그래도 안 되면 오류 화면을 질문해 주세요. 임의 사이트의 설치 파일이나 추측한 PATH 수정은 필요 없습니다.
 
-## 4. Skill 설치와 마지막 확인
+## 4. 쇼츠 스킬 설치
 
-세 도구가 준비된 뒤 Claude에게 다음 문장을 보냅니다.
+AI에게 다음 문장을 보냅니다.
 
 ```text
-내 운영체제용 install 파일이 하는 일을 먼저 세 줄로 설명해 주세요.
-기존 ai-shorts는 삭제하지 않고 날짜가 붙은 백업으로 옮기는지 확인해 주세요.
-내 확인을 기다린 뒤 설치하고, 새 Code 세션에서 /ai-shorts가 보이는지 확인해 주세요.
+내 운영체제의 install_mac.sh 또는 install_windows.ps1을 읽고 설치 위치와 기존 스킬 백업 위치를 설명해 주세요.
+내가 확인하면 실행하세요. 외부 API는 호출하지 마세요.
+전용 Python 환경과 Pillow가 실제로 준비됐는지 확인해 주세요.
 ```
 
-새 세션에서 `/`를 입력했을 때 `ai-shorts`가 보이고, `demo-project` 점검에서 `3/3 준비됨`이 나오면 클리닉 완료입니다.
+Windows에서 실행 정책으로 막히면 먼저 파일 내용을 확인하고, 해당 파일 실행에만 적용되는 다음 명령을 사용합니다. 시스템 전체 정책은 바꾸지 않습니다.
 
-## 운영자 체크
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\install_windows.ps1
+```
 
-- [ ] Mac 한 대에서 ZIP 압축 해제부터 14초 MP4 완성까지 다시 실행했다.
-- [ ] Windows 한 대에서 ZIP 압축 해제부터 14초 MP4 완성까지 다시 실행했다.
-- [ ] 설치 화면에 API 키·암호·개인 경로가 보이지 않는지 확인했다.
-- [ ] 설치 실패자는 Day 7 전에 별도 보충 시간을 배정했다.
+새 Code 세션에서 `/ai-shorts`가 보이면 설치 완료입니다. 보이지 않으면 설치 결과에 나온 경로를 AI에게 알려 위치와 새 세션 여부를 확인합니다.
+
+## 5. 무료 샘플 완성
+
+[README의 OS별 데모 실행](README.md#데모-실행)을 따르거나 아래 문장을 보냅니다.
+
+```text
+demo-project의 제공 영상·음성·자막 시간표만 사용해 D07_연습.mp4를 조립해 주세요.
+Typecast와 Flow를 호출하지 마세요. 원본은 유지하고 결과를 열어 길이·해상도·음성·한글 자막을 확인해 주세요.
+```
+
+**성공 기준:** 14초 세로 MP4가 열리고 음성과 한글 자막이 나옵니다. 기본 실습 완료입니다. 개인 주제의 20~23초 영상은 온라인 7장의 선택 확장 실습으로 이어갑니다.
+
+질문할 때는 ‘왕초보 / 7장 / Mac 또는 Windows / 단계 / 오류 문구’를 보내주세요. API 키·암호는 가립니다.
+
+설치 근거: [Homebrew 설치](https://docs.brew.sh/Installation), [FFmpeg 패키지](https://formulae.brew.sh/formula/ffmpeg.html), [WinGet 설치 명령](https://learn.microsoft.com/en-us/windows/package-manager/winget/install).

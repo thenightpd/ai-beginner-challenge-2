@@ -6,6 +6,6 @@
 
 Day 6을 완주했다면, 어제 이름 바꾼 Day 6 폴더 안에 있는 `day06-handoff` 폴더를 통째로 이 `day07-start` 폴더 안으로 옮겨 왔는지 먼저 확인합니다(온라인 Day 7 실행서 0-1의 4번). 이미 옮겼다면 Claude가 `import_day6_brief.py`로 C1~C5를 검사해 `my-short/script.txt`로 가져오므로 대본을 다시 입력하지 않습니다. Day 6을 건너뛰었다면 그대로 두고 새 주제부터 시작합니다.
 
-처음부터 기술 명령을 입력하지 마세요. Mac은 `PRECHECK_MAC.md`, Windows는 `PRECHECK_WINDOWS.md`를 Claude가 읽고 한 단계씩 안내하게 합니다. Python·FFmpeg가 없다면 수강생 혼자 설치하지 말고 운영자와 `INSTALL_CLINIC.md`를 진행합니다.
+처음부터 기술 명령을 입력하지 마세요. Mac은 `PRECHECK_MAC.md`, Windows는 `PRECHECK_WINDOWS.md`를 Claude가 읽고 한 단계씩 안내하게 합니다. Python·FFmpeg가 없다면 `INSTALL_CLINIC.md`의 OS별 절차로 준비합니다. 설치 전 내용을 확인하고, 같은 오류가 반복되면 구매자 단톡방에서 함께 해결합니다.
 
-실제 내 쇼츠에는 Typecast와 Google Flow 계정 상태가 필요합니다. API 키는 Claude 채팅에 붙여넣지 않습니다. 전체 순서는 [온라인 Day 7 전체 실행서](https://kimyoungil21.github.io/ai-beginner-challenge-2/#day7), Typecast 키 연결은 `TYPECAST_SETUP.html`, Flow 화면은 `FLOW_5CUT_GUIDE.html`을 봅니다. 최종 파일명은 `D07_닉네임_쇼츠.mp4`입니다.
+기본 완료는 제공 재료로 만든 14초 샘플입니다. API 키와 유료 계정은 필요 없습니다. 선택 확장인 본인 주제의 20~23초 쇼츠에는 Typecast와 Google Flow 계정 상태가 필요합니다. API 키는 Claude 채팅에 붙여넣지 않습니다. 전체 순서는 [온라인 Day 7 전체 실행서](https://kimyoungil21.github.io/ai-beginner-challenge-2/#day7), Typecast 키 연결은 `TYPECAST_SETUP.html`, Flow 화면은 `FLOW_5CUT_GUIDE.html`을 봅니다. 최종 파일명은 `D07_닉네임_쇼츠.mp4`입니다.

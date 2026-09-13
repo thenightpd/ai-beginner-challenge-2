@@ -15,6 +15,8 @@ MAX_CAPTION_CHARS = 18   # ~2 lines of Korean at this size
 MAX_CAPTION_SECS = 2.4
 
 KOREAN_FONTS = [
+    os.path.join(os.environ.get("WINDIR", "C:/Windows"), "Fonts", "malgunbd.ttf"),
+    os.path.join(os.environ.get("WINDIR", "C:/Windows"), "Fonts", "malgun.ttf"),
     "/System/Library/Fonts/AppleSDGothicNeo.ttc",
     "/System/Library/Fonts/Supplemental/AppleGothic.ttf",
     "/Library/Fonts/NanumGothic.ttf",
@@ -90,7 +92,7 @@ def _filter_path(path):
 
 def build_ass(cues, workdir, w, h, size, margin_v):
     path = os.path.join(workdir, "subs.ass")
-    lines = [ASS_HEAD.format(w=w, h=h, font="Apple SD Gothic Neo",
+    lines = [ASS_HEAD.format(w=w, h=h, font=("Malgun Gothic" if sys.platform == "win32" else "Apple SD Gothic Neo"),
                              size=size, mv=margin_v)]
     for c in cues:
         lines.append(f"Dialogue: 0,{_ts(c['start'])},{_ts(c['end'])},Main,,0,0,0,,"

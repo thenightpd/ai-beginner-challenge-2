@@ -28,4 +28,4 @@ ffprobe -version
 Skill 설치 완료
 ```
 
-`py` 또는 `ffmpeg`를 찾을 수 없으면 PowerShell의 임의 설치 명령을 실행하지 않습니다. 운영자에게 `Day 7 사전점검 / Windows / 화면에 보이는 오류`를 보냅니다. 운영자가 Windows 교육용 컴퓨터에서 먼저 검증한 [`INSTALL_CLINIC.md`](INSTALL_CLINIC.md)의 Windows 절차를 함께 진행합니다.
+`py` 또는 `ffmpeg`를 찾을 수 없으면 [`혼자 설치하기`](INSTALL_CLINIC.md)의 Windows 절차로 준비합니다. 새 PowerShell과 Claude 세션에서 다시 확인하고, 같은 오류가 반복되면 `왕초보 / 7장 / Windows / 단계 / 오류 화면`을 구매자 단톡방에 보냅니다.
