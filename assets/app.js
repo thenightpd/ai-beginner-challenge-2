@@ -2,7 +2,7 @@ const lessons = [
   { track: "guide", id: "welcome", day: "안내", title: "처음 오신 분께", file: "00_환영합니다.md" },
   { track: "guide", id: "day0", day: "준비", title: "설치부터 첫 폴더까지", file: "Day00_시작전준비.md" },
   { track: "guide", id: "terms", day: "준비", title: "왕초보 용어사전", file: "Day00_왕초보용어사전.md" },
-  { track: "guide", id: "rules", day: "공통", title: "단톡방 질문·선택 공유", file: "00_오픈카톡_인증규칙.md" },
+  { track: "guide", id: "rules", day: "공통", title: "1:1 오픈채팅 질문·선택 공유", file: "00_오픈카톡_인증규칙.md" },
   { track: "guide", id: "day1", day: "1장", title: "콘텐츠 스튜디오 2종", file: "Day01_Artifact진단기_실행서.md" },
   { track: "guide", id: "day2", day: "2장", title: "LIFE BRAND 운영본부", file: "Day02_Projects_실행서_v2.md" },
   { track: "guide", id: "day3", day: "3장", title: "브랜드 론칭 디자인", file: "Day03_Design_실행서_v2.md" },
