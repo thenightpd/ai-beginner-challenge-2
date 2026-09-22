@@ -28,4 +28,4 @@ ffprobe -version
 Skill 설치 완료
 ```
 
-Python 또는 FFmpeg가 없으면 [`혼자 설치하기`](INSTALL_CLINIC.md)의 Mac 절차를 완료한 뒤 다시 확인합니다. 같은 오류가 반복되면 `왕초보 / 7장 / Mac / 없는 항목 / 오류 화면`을 구매자 단톡방에 보냅니다.
+Python 또는 FFmpeg가 없으면 [`혼자 설치하기`](INSTALL_CLINIC.md)의 Mac 절차를 완료한 뒤 다시 확인합니다. 같은 오류가 반복되면 `왕초보 / 7장 / Mac / 없는 항목 / 오류 화면`을 그밤PD 카톡 1:1 오픈채팅에 보냅니다.

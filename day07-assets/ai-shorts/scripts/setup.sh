@@ -61,7 +61,7 @@ fi
 if [ "$missing" -ne 0 ]; then
   echo
   echo "준비 중단: 없는 프로그램이 있습니다. 임의 설치 명령을 실행하지 마세요."
-  echo "시작 패키지의 PRECHECK와 INSTALL_CLINIC.md의 OS별 자습 설치를 진행하세요. 반복 오류는 구매자 단톡방에 질문하세요."
+  echo "시작 패키지의 PRECHECK와 INSTALL_CLINIC.md의 OS별 자습 설치를 진행하세요. 반복 오류는 그밤PD 카톡 1:1 오픈채팅에 질문하세요."
   exit 1
 fi
 

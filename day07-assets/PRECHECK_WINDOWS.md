@@ -28,4 +28,4 @@ ffprobe -version
 Skill 설치 완료
 ```
 
-`py` 또는 `ffmpeg`를 찾을 수 없으면 [`혼자 설치하기`](INSTALL_CLINIC.md)의 Windows 절차로 준비합니다. 새 PowerShell과 Claude 세션에서 다시 확인하고, 같은 오류가 반복되면 `왕초보 / 7장 / Windows / 단계 / 오류 화면`을 구매자 단톡방에 보냅니다.
+`py` 또는 `ffmpeg`를 찾을 수 없으면 [`혼자 설치하기`](INSTALL_CLINIC.md)의 Windows 절차로 준비합니다. 새 PowerShell과 Claude 세션에서 다시 확인하고, 같은 오류가 반복되면 `왕초보 / 7장 / Windows / 단계 / 오류 화면`을 그밤PD 카톡 1:1 오픈채팅에 보냅니다.

@@ -7,7 +7,7 @@
 
 ## 교육용 변경
 
-- SKILL.md: 6장 주문서 이어받기, OS별 자습 설치, 무료 기본 실습과 유료 확장 분리, 구매자 단톡방 질문 지원
+- SKILL.md: 6장 주문서 이어받기, OS별 자습 설치, 무료 기본 실습과 유료 확장 분리, 그밤PD 카톡 1:1 질문 지원
 - scripts/subs.py: Windows 맑은 고딕 파일 후보와 ASS 폰트 선택 추가
 - scripts/setup.sh: 읽기 전용 상태 확인 후 자습 설치 문서로 연결
 - references/prompt-formula.md: 고정 가격 대신 현재 Flow 화면의 사용량 확인
